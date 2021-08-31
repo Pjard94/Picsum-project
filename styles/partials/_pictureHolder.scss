@@ -1,0 +1,57 @@
+@use '../abstracts/index' as *;
+
+body {
+    overflow: hidden;
+}
+
+#main {
+    background-color: $background-colour;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+}
+
+h1 {
+    font-size: 54px;
+    margin: 20px 0 30px;
+}
+
+#picture-display {
+    content: '';
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    border: 4px solid $border;
+    margin: 20px 0 30px;
+}
+
+#apply-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#picum-email {
+    margin: 20px 0 10px;
+    outline: hidden;
+    font-size: 18px;
+    border: 2px solid $border;
+}
+
+#picum-email:focus {
+    outline: 1px solid $border;
+
+}
+
+#picture-apply {
+    border: none;
+    background-color: $border;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+}
