@@ -13,7 +13,7 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 20px 10px;
+    padding: 20px 0;
 }
 
 h1 {
@@ -27,7 +27,7 @@ h1 {
     width: 260px;
     height: 260px;
     border: 4px solid $border;
-    margin: 20px 0 30px;
+    margin: 20px 0 10px;
 }
 
 #apply-form {
@@ -36,22 +36,23 @@ h1 {
 }
 
 #picum-email {
-    margin: 20px 0 10px;
+    margin: 30px 0 10px;
     outline: hidden;
     font-size: 18px;
-    border: 2px solid $border;
+    border: 2px solid $button;
 }
 
 #picum-email:focus {
-    outline: 1px solid $border;
+    outline: 1px solid $button;
 
 }
 
-#picture-apply {
+.buttons {
     border: none;
-    background-color: $border;
+    background-color: $button;
     color: white;
     padding: 10px 20px;
     border-radius: 25px;
     font-size: 18px;
+    cursor: pointer;
 }
