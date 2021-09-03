@@ -1,0 +1,50 @@
+@use '../abstracts/index' as *;
+
+#submissions {
+    background-color: whitesmoke;
+    padding: 10px 3px;
+    overflow-x: hidden;
+
+    div {
+        border: 2px solid $border;
+        border-radius: 25px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    h3 {
+        align-self: center;
+        text-align: center;
+    }
+
+    img {
+        width: 240px;
+        height: 260px;
+        border: 2px solid $button;
+        border-radius: 50%;
+        margin: 10px 0 0;
+        display: block;
+    }
+}
+
+#submissions-area-header {
+    font-size: 40px;
+}
+
+.userSubmissions {
+    padding: 10px;
+
+    h3 {
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width : 518px) {
+    #submissions {
+        img {
+            margin: 10px;
+            display: inline;
+        }
+    }
+}
