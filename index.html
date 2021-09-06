@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Picsum</title>
+    <title>PFP Picker</title>
     <!-- Below are the script links for javascript libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- The style links will be below. -->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- The font style links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,18 +20,19 @@
 
         <h1>PFP Picker</h1>
 
-        <img id="picture-display"></img>
+        <img id="picture-display"></img> <!-- Displays the randomly selected picture. -->
 
-        <div id="picture-reroll" class="buttons">Click to reroll</div>
+        <div id="picture-reroll" class="buttons">Click to reroll</div> <!-- Changes the picture with a random url. -->
 
         <form id="apply-form">
-        <input type="email" id="picum-email" required>
+        <input type="email" id="picum-email" required> <!-- Email entry box. -->
         </form>
 
-        <div id="picture-apply" class="buttons">Click here to apply</div>   
+        <div id="picture-apply" class="buttons">Click here to apply</div>    <!-- This will submit the new email picture to the area below, or just adds a picture to an existing area. -->
 
     </div>
 
+    <!-- This area will hold divs with previously used images. -->
     <div id="submissions">
         
         <h3 id="submissions-area-header">Previously Used</h3>
