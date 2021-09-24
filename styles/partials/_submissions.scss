@@ -40,6 +40,20 @@
     }
 }
 
+.error-message {
+    display: none;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.validation-failed {
+    display: block;
+}
+
 @media screen and (min-width : 518px) {
     #submissions {
         img {

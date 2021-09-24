@@ -13,6 +13,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@400;500;600&display=swap" rel="stylesheet">
+        
+        <!-- The script to run the page -->
+        <script src="javascript/picturePicker.js" defer></script>  
     </head>
     <body>
 
@@ -23,6 +26,8 @@
             <img id="picture-display" alt="Potential profile picture"> <!-- Displays the randomly selected picture. -->
 
             <div id="picture-reroll" class="buttons">Click to reroll</div> <!-- Changes the picture with a random url. -->
+
+            <div id="error-bar" class="error-message">Please ensure the Email Address is correct.</div> <!-- Shows when there is an issue. -->
 
             <form id="apply-form">
             <input type="email" id="picum-email" required> <!-- Email entry box. -->
@@ -39,6 +44,6 @@
             
         </div>
 
-    <script src="javascript/picturePicker.js"></script>  
+    
     </body>
 </html>
